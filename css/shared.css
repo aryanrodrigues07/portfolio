@@ -1,0 +1,62 @@
+/* Shared CSS features for all pages -> like the navbar for ex */
+
+/* Base */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0A0A0A;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Nav */
+#nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0 50px;
+    color: #888888;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 0.5px solid #222222;
+    height: 64px;
+    gap: 40px;
+    background: rgba(10, 10, 10, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+#nav-container li {
+    list-style-type: none;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+#nav-container li:hover {
+    color: #ffffff;
+}
+
+#nav-container a {
+    color: inherit;
+}
+
+#student-info {
+    margin-right: auto;
+    color: #00BFFF;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
